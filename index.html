@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Glcdfont Tracer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+#canvases {
+    position: relative;
+}
+#canvases > #grid {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+canvas {
+    width: 100%;
+    image-rendering: pixelated;
+}
+    </style>
+  </head>
+
+  <body>
+    <h1>Glcdfont 用トレス台</h1>
+
+    <section>
+      <h2>glcdfont.c</h2>
+      <textarea id="input" placeholder="glcdfont.c を貼り付け"></textarea>
+      <p>
+        <button id="in">セイ</button>
+      </p>
+    </section>
+
+    <section>
+      <h2>canvas</h2>
+      <div id="canvases">
+        <canvas id="canvas" height=0 width=0></canvas>
+        <canvas id="grid" height=0 width=0></canvas>
+      </div>
+      <p>
+        <button id="pen">ペン</button>
+        <button id="eraser">消しゴム</button>
+      </p>
+      <p>
+        <button id="out">セイ</button>
+      </p>
+    </section>
+
+    <section>
+      <h2>output</h2>
+      <textarea id="output"></textarea>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
